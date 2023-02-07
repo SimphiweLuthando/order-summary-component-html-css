@@ -1,0 +1,219 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    /* Active State Colors */
+    --Light-purple: hsl(245, 83%, 68%);
+
+    /* Background color */
+    --Very-light-purple: hsl(226,100%,94%);
+
+    /* Typography */
+    --Font-used: 'Red Hat Display', sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--Font-used);
+    font-size: 0.938rem;
+    background-image: url('/images/pattern-background-mobile.svg');
+    background-color: var(--Very-light-purple);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: 500;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 20.438rem;
+    max-width: 28.125rem;
+    background-color: white;
+    padding-bottom: 3rem;
+    border-radius: 1.25rem;
+}
+
+.background-img{
+    margin-bottom: 2rem;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.375rem;
+}
+
+.background-img img{
+    max-width: 100%;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+
+}
+
+h1,p{
+    text-align: center;    
+}
+p{
+    line-height: 1.563rem;
+    margin:0;
+    margin-bottom: 1.688rem;
+    color: var(--Desaturated-blue);
+}
+
+.selected-plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--Very-pale-blue);
+    border-radius: 0.688rem;
+    width: 17.438rem;
+    margin-bottom: 1.5rem;
+
+}
+.general{
+    display: flex;
+    align-items: center;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.button-group a{
+    text-align: center;
+}
+
+.music-icon{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.25rem;
+}
+
+h5{
+    margin: 0;
+    margin-bottom: 0.188rem;
+}
+
+.price{
+    color: var(--Desaturated-blue);
+}
+
+a:visited, a{
+    color: var(--Bright-blue);
+}
+
+.payment{
+    width: 17.438rem;
+    padding: 0.938rem 4.063rem ;
+    color: white;
+    margin: 0 auto;
+    border-radius: 0.688rem;
+    background-color: var(--Bright-blue);
+    box-shadow: 0 1.25rem 1.25rem hsl(245, 75%, 52%, 0.19);
+    margin-bottom: 1.5rem;
+}
+
+.payment:visited{
+    color: white;
+}
+
+.button-group a{
+    text-decoration: none;
+}
+
+.cancel, .cancel:visited{
+    color: var(--Desaturated-blue);
+    
+}
+
+.cancel, .payment, h5{
+    font-weight: 700;
+}
+
+.plan{
+    font-size: 0.875rem;
+}
+
+.change-order{
+    font-size: 0.813rem;
+}
+
+.change-order:active{
+    color: var(--Light-purple);
+}
+
+.payment:active{
+    background-color: var(--Light-purple);
+}
+
+.cancel:active{
+    color: var(--Dark-blue);
+}
+
+@media screen and (min-width: 769px) {
+    .card{
+        width: 28.125rem;
+    }
+
+    .background-img{
+        margin-bottom: 2.813rem;
+    }
+
+    h1{
+        margin-bottom: 1.063rem;
+        font-size: 1.75rem;
+    }
+    p{
+        line-height: 1.625rem;
+        margin: 0 auto;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+    }
+    p,.selected-plan,.payment{
+        width: 22.125rem;
+    }
+
+    .selected-plan{
+        padding: 1.563rem 1.5rem ;
+    }
+    h5, .price{
+        font-size: 1rem;
+    }
+
+    .change-order{
+        font-size: 0.875rem;
+    }
+
+    body{
+        background-image: url('/images/pattern-background-desktop.svg');
+        /* background-color: var(--Very-light-purple);
+        background-size: contain;
+        background-repeat: no-repeat; */
+    }
+
+}
+
